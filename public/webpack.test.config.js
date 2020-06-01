@@ -1,3 +1,4 @@
+//测试环境配置
 const path = require('path');
 const webpack = require('webpack');
 const HtmlwebpackPlugin = require('html-webpack-plugin');

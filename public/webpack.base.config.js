@@ -1,3 +1,4 @@
+//基础配置
 const path = require('path');
 const webpack = require('webpack');
 
@@ -61,6 +62,9 @@ module.exports = {
                 loader: 'json-loader',
             }
         ]
+    },
+    resolve: {
+        alias: require('./webpack.alias.js'),
     },
     plugins: [
         new webpack.DllReferencePlugin({

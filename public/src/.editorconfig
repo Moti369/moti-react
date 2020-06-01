@@ -1,0 +1,9 @@
+root = true
+
+[*.{js,json,jsx,html,css,scss}]
+charset = utf-8
+
+indent_style = space
+indent_size = 4
+
+trim_trailing_white_space_on_save = true

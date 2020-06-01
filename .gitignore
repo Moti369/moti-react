@@ -1,0 +1,9 @@
+public/node_modules
+server/node_modules
+public/dest
+server/src/public
+jsconfig.json
+public/dest.zip
+.DS_Store
+npm-debug.log
+git 
