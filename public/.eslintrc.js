@@ -6,7 +6,7 @@ module.exports = {
     'parser': 'babel-eslint',
     'extends': [
         'eslint:recommended',
-       'plugin:react/recommended',
+        'plugin:react/recommended',
         'plugin:jsx-control-statements/recommended'
     ],
     'plugins': [

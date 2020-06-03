@@ -1,4 +1,5 @@
 //开发环境配置
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlwebpackPlugin = require('html-webpack-plugin');
@@ -8,6 +9,7 @@ const baseConfig = require('./webpack.base.config.js');
 const ROOT_PATH = path.resolve(__dirname);
 const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 const devConfig = merge(baseConfig, {
+   
     devtool: 'eval-source-map',
     plugins: [
         new webpack.DefinePlugin({
@@ -17,6 +19,9 @@ const devConfig = merge(baseConfig, {
             title: 'react-webpack-demo',
             filename: 'index.html',
             template: path.resolve(SRC_PATH, 'templates', 'index.html')
+        }),
+        new OpenBrowserPlugin({//自动打开浏览器链接
+            url: `http://localhost:7630`,
         })
     ],
     devServer: {
